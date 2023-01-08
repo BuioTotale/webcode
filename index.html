@@ -16,7 +16,7 @@
         font-size: 100%;
         box-sizing: border-box;
         }
-        body{
+        body, a, button{
             font-family: 'kanit', sans-serif;
             font-weight: 300;
             color: black;
@@ -120,6 +120,118 @@
         .img-mission{
             width: 300px;
         }
+        .titolone{
+            text-align: center;
+            margin: 50px 50px;
+            font-size: 36px;
+        }
+        .card-prodotto{
+            background-color: #FFD449;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* padding: 30px; */
+            margin: 50px 50px;
+            border-radius: 0.4em;
+        }
+        .card-prodotto img{
+            padding: 20px;
+        }
+        .card-prodotto button{
+            width: auto;
+            padding: 10px 10px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 0.4em;
+        }
+        .scrollmenu {
+            display: flex;
+            background-color: #efefef;
+            overflow: auto;
+            white-space: nowrap;
+        }
+        .attrezzi{
+            background: url(img/attrezzi.png) no-repeat center center;
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            display: flex;
+            align-items: flex-end;
+            margin: 50px 0;
+        }
+        .fascia-bianca{
+            background-color: white;
+            width: 100%;
+            height: 50px;
+            margin-bottom: 20px;
+        }
+        .fascia-bianca h3{
+            color: #FFD449;
+            font-size: 19px;
+            margin: 10px 10px;
+            
+        }
+        .concimi{
+            background: url(img/concimi.png) no-repeat center center;
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            display: flex;
+            align-items: flex-end;
+            margin: 50px 0;
+        }
+        .fascia-bianca-2{
+            background-color: white;
+            width: 100%;
+            height: 50px;
+            margin-bottom: 20px;
+        }
+        .fascia-bianca-2 h3{
+            color: #FFD449;
+            font-size: 19px;
+            margin: 10px 10px;
+            
+        }
+        .newsletter{
+            background-color: black;
+            color: white;
+            height: 200px;
+        }
+        .newsletter h3{
+            padding: 10px;
+            font-size: 19px;
+        }
+        .newsletter span{
+            padding: 10px;
+        }
+        .newsletter a{
+            display: flex;
+            font-weight: 500;
+            text-decoration: none;
+            color: #FFD449;
+            align-items: center;
+            padding: 10px;
+        }
+        .info{
+            background-color: #FFD449;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            padding: 10px 10px;
+            gap: 10px;
+        }
+        .info a{
+            color: black;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+        .info img{
+            width: 20px;
+        }
+        .info button{
+            background-color: white;
+            padding: 10px 10px;
+        }
         /* viewport desktop */
         @media (min-width:768px){
             header, .grid-1{
@@ -212,14 +324,100 @@
                     <h3>I nostri servizi</h3>
                     <p>Oltre alla vendita di Bonsai, offriamo ai nostri clienti il servizio di potatura, rinvaso e pensionamento nel periodo estivo.</p>
                 </div>
-                <div class="img-mission">
-                    <img src="img/img-1-mission.png" alt="">
-                    <img src="img/img-2-mission.png" alt="">
-                </div>
     </article>
 </main>
-<div class="grid-2">
-    
-</div>
+<h1 class="titolone"> Bonsai da interno</h1>
+<div class="scrollmenu">
+    <div class="card-prodotto">
+      <img src="img/carmona.png" alt="">
+      <button><i class="fa-solid fa-star"></i>Wishlist</button></i>
+      <button><i class="fa-solid fa-share-nodes">Condividi</button></i>
+      <h3>Carmona - 40 cm</h3>
+      <span>125,00 € - tasse incluse</span>
+      <button>Carrello</button>
+    </div>
+    <div class="card-prodotto">
+        <img src="img/crassula.png" alt="">
+        <button><i class="fa-solid fa-star"></i>Wishlist</button></i>
+        <button><i class="fa-solid fa-share-nodes">Condividi</button></i>
+        <h3>Crassula - 26 cm</h3>
+        <span>18,00 € - tasse incluse</span>
+        <button>Carrello</button>
+      </div>
+      <div class="card-prodotto">
+        <img src="img/crassula-portulacaria.png" alt="">
+        <button><i class="fa-solid fa-star"></i>Wishlist</button></i>
+        <button><i class="fa-solid fa-share-nodes">Condividi</button></i>
+        <h3>Crassula Portulacaria - 36 cm</h3>
+        <span>50,00 € - tasse incluse</span>
+        <button>Carrello</button>
+      </div>
+      <div class="card-prodotto">
+        <img src="img/ilex-crenata.png" alt="">
+        <button><i class="fa-solid fa-star"></i>Wishlist</button></i>
+        <button><i class="fa-solid fa-share-nodes">Condividi</button></i>
+        <h3>Ilex Crenata - 29 cm</h3>
+        <span>30,00 € - tasse incluse</span>
+        <button>Carrello</button>
+      </div>
+  </div>
+  <h1 class="titolone"> Bonsai da esterno</h1>
+<div class="scrollmenu">
+    <div class="card-prodotto">
+      <img src="img/acer-palmatum.png" alt="">
+      <button><i class="fa-solid fa-star"></i>Wishlist</button></i>
+      <button><i class="fa-solid fa-share-nodes">Condividi</button></i>
+      <h3>Acer Palmatum - 40 cm</h3>
+      <span>560,00 € - tasse incluse</span>
+      <button>Carrello</button>
+    </div>
+    <div class="card-prodotto">
+        <img src="img/gelso.png" alt="">
+        <button><i class="fa-solid fa-star"></i>Wishlist</button></i>
+        <button><i class="fa-solid fa-share-nodes">Condividi</button></i>
+        <h3>Gelso - 37 cm</h3>
+        <span>95,00 € - tasse incluse</span>
+        <button>Carrello</button>
+      </div>
+      <div class="card-prodotto">
+        <img src="img/olivo.png" alt="">
+        <button><i class="fa-solid fa-star"></i>Wishlist</button></i>
+        <button><i class="fa-solid fa-share-nodes">Condividi</button></i>
+        <h3>Olivo - 57 cm</h3>
+        <span>720,00 € - tasse incluse</span>
+        <button>Carrello</button>
+      </div>
+      <div class="card-prodotto">
+        <img src="img/ilex-crenata.png" alt="">
+        <button><i class="fa-solid fa-star"></i>Wishlist</button></i>
+        <button><i class="fa-solid fa-share-nodes">Condividi</button></i>
+        <h3>Pyracantha - 27 cm</h3>
+        <span>95,00 € - tasse incluse</span>
+        <button>Carrello</button>
+      </div>
+  </div>
+  <aside class="attrezzi">
+    <div class="fascia-bianca">
+        <h3>Attrezzi</h3>
+    </div>
+  </aside>
+  <aside class="concimi">
+    <div class="fascia-bianca-2">
+        <h3>Concimi</h3>
+    </div>
+  </aside>
+  <div class="container-info">
+    <div class="newsletter">
+        <h3>Iscriviti alla newsletter</h3>
+        <span>Scopri le novità sul mondo Mini Greene Bonsai</span>
+        <a href="#">Iscriviti qui <i class="fa-solid fa-right-long"></i></a>
+    </div>
+    <div class="info">
+        <i class="fa-solid fa-phone"><a href="#">0123 456789</a></i>
+        <i class="fa-solid fa-envelope"><a href="mailto: info@minigreene.it">info@minigreene.it</a></i>
+        <i class="fa-solid fa-location-dot"><a href="#">Via Baracca 1, MI</a></i>
+        <button>Contattaci</button>
+    </div>
+  </div>
 </body>
 </html>
