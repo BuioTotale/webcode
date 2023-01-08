@@ -37,7 +37,7 @@
             padding: 30px 20px;
         }
         nav li{
-            display: inline-block;
+            
             margin-left: 20px;
             list-style: none;
             padding-top: 10px;
@@ -119,16 +119,26 @@
         }
         .img-mission{
             width: 300px;
-            
-            
         }
         /* viewport desktop */
         @media (min-width:768px){
-            header{
+            header, .grid-1{
                 display: grid;
             }
             header{
-                grid-template-columns: 1fr;
+                grid-template-columns: auto auto;
+                align-items: center;
+            }
+            nav li{
+                display: inline;
+            }
+            .grid-1{
+                grid-template-columns: 512px auto;
+            }
+            .img-mission{
+                display: flex;
+                gap: 10px;
+                width: 200px;
             }
         }
     </style>
@@ -208,5 +218,8 @@
                 </div>
     </article>
 </main>
+<div class="grid-2">
+    
+</div>
 </body>
 </html>
