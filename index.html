@@ -17,7 +17,7 @@
         box-sizing: border-box;
         }
         body, a, button{
-            font-family: 'kanit', sans-serif;
+            font-family: 'kanit', sans-serif; !important
             font-weight: 300;
             color: black;
         }
@@ -127,15 +127,12 @@
         }
         .card-prodotto{
             background-color: #FFD449;
-            display: flex;
-            flex-direction: column;
+            display: grid;
             align-items: center;
             /* padding: 30px; */
             margin: 50px 50px;
             border-radius: 0.4em;
-        }
-        .card-prodotto img{
-            padding: 20px;
+            padding: 30px;
         }
         .card-prodotto button{
             width: auto;
@@ -217,6 +214,7 @@
             height: 200px;
             display: flex;
             flex-direction: column;
+            justify-content: space-around;
             padding: 10px 10px;
             gap: 10px;
         }
@@ -232,9 +230,32 @@
             background-color: white;
             padding: 10px 10px;
         }
+        .box-notizie{
+            margin: 50px 20px;
+        }
+        .box-notizie a{
+            text-decoration: none;
+            color: #FFD449;
+        }
+        footer{
+            padding: 10px 20px 20px;
+        }
+        footer span{
+            display: flex;
+        }
+        footer .social{
+            display: flex;
+            margin: 10px 0;
+            gap: 20px;
+            font-size: 20px;
+        }
+        .colonna{
+            margin: 20px 0;
+        }
+        
         /* viewport desktop */
         @media (min-width:768px){
-            header, .grid-1{
+            header, .grid-1, .container-info, .grid-notizie, footer{
                 display: grid;
             }
             header{
@@ -251,6 +272,20 @@
                 display: flex;
                 gap: 10px;
                 width: 200px;
+            }
+            .container-info{
+                grid-template-columns: 1fr 1fr;
+            }
+            .att-conc{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                margin: 50px 0;
+            }
+            .grid-notizie{
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            footer{
+                grid-template-columns: 1fr 1fr 1fr;
             }
         }
     </style>
@@ -331,7 +366,7 @@
     <div class="card-prodotto">
       <img src="img/carmona.png" alt="">
       <button><i class="fa-solid fa-star"></i>Wishlist</button></i>
-      <button><i class="fa-solid fa-share-nodes">Condividi</button></i>
+      <button>Condividi</button>
       <h3>Carmona - 40 cm</h3>
       <span>125,00 € - tasse incluse</span>
       <button>Carrello</button>
@@ -396,6 +431,7 @@
         <button>Carrello</button>
       </div>
   </div>
+<div class="att-conc">
   <aside class="attrezzi">
     <div class="fascia-bianca">
         <h3>Attrezzi</h3>
@@ -406,6 +442,7 @@
         <h3>Concimi</h3>
     </div>
   </aside>
+</div>
   <div class="container-info">
     <div class="newsletter">
         <h3>Iscriviti alla newsletter</h3>
@@ -419,5 +456,50 @@
         <button>Contattaci</button>
     </div>
   </div>
+<h1 style="margin: 50px; font-size: 28px; text-align: center;"> Cose da sapere per mantenere un bonsai</h1>
+    <div class="grid-notizie">
+        <div class="box-notizie">
+            <img src="img/azalea.png" alt="">
+            <h3>Azalea bonsai | come mantenerla</h3>
+            <a href="#">Continua a leggere <i class="fa-solid fa-right-long"></i></a>
+        </div>
+        <div class="box-notizie">
+            <img src="img/NPK.png" alt="">
+            <h3>NPK che cos'è e perchè è importante</h3>
+            <a href="#">Continua a leggere <i class="fa-solid fa-right-long"></i></a>
+        </div>
+        <div class="box-notizie">
+            <img src="img/akadama.png" alt="">
+            <h3>Akadama per bonsai</h3>
+            <a href="#">Continua a leggere <i class="fa-solid fa-right-long"></i></a>
+        </div>
+    </div>
+    <div class="wide">
+        <footer>
+            <div class="colonna">
+                <h3>Assistenza clienti</h3>
+                <span>Spedizioni</span>
+                <span>Pagamenti</span>
+                <span>Condizioni di vendita</span>
+            </div>
+            <div class="colonna">
+                <h3>Nostra offerta</h3>
+                <span>Offerte</span>
+                <span>Nuovi prodotti</span>
+                <span>Bomboniere bonsai</span>
+            </div>
+            <div class="colonna">
+                <h3>Il mio account</h3>
+                <span>Il mio account</span>
+                <span>I miei ordini</span>
+                <span>I miei indirizzi</span>
+            </div>
+            <div class="social">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
