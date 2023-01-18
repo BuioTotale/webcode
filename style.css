@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;500;700&display=swap');
+        *{
+        padding: 0;
+        margin: 0;
+        border: 0;
+        font-size: 100%;
+        box-sizing: border-box;
+        }
+        body, a, button{
+            font-family: 'kanit', sans-serif; !important
+            font-weight: 300;
+            color: black;
+        }
+        h1{
+            font-family: 'kanit', sans-serif;
+            font-weight: 700;
+            font-size: 19px;
+        }
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+        .wide{
+            background-color: #FFD449;
+        }
+        header{
+            padding: 30px 20px;
+        }
+        nav li{
+            
+            margin-left: 20px;
+            list-style: none;
+            padding-top: 10px;
+        }
+        nav a{
+            text-decoration: none;
+            font-weight: 500;
+            color: black;
+        }
+        #banner{
+            width: 100%;
+            height: 500px;
+            background: url(img/header.png) no-repeat center center;
+            background-size: cover;
+            display: flex;
+            justify-content: end;
+        }
+        .card-corsi{
+            display: flex;
+            flex-direction: column;
+            background-color: #FFD449;
+            padding: 20px 30px;
+            margin: 50px 30px;
+            height: 330px;
+            border-radius: 5px;
+        }
+        .card-corsi a{
+            text-decoration: none;
+            color: black;
+            margin-left: 10px;
+        }
+        .card-corsi img{
+            width: 25px;
+        }
+        .card-corsi h3{
+            text-align: center;
+        }
+        .corso{
+            padding: 5px;
+        }
+        .btn-corsi{
+            text-transform: uppercase;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .main-btn{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 50px
+        }
+        .main-btn img{
+            width: 70px;
+        }
+        .main-btn a{
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #FFD449;
+            margin: 10px;
+        }
+        .mission{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: black;
+            color: white;
+        }
+        .mission-text{
+            padding: 15px 10px;
+        }
+        .mission h2{
+            font-size: 28px;
+            text-transform: uppercase;
+            margin-top: 20px;
+        }
+        .mission span{
+            text-transform: uppercase;
+        }
+        .img-mission{
+            width: 300px;
+        }
+        .titolone{
+            text-align: center;
+            margin: 50px 50px;
+            font-size: 36px;
+        }
+        .card-prodotto{
+            background-color: #FFD449;
+            display: grid;
+            align-items: center;
+            /* padding: 30px; */
+            margin: 50px 50px;
+            border-radius: 0.4em;
+            padding: 30px;
+        }
+        .card-prodotto button{
+            width: auto;
+            padding: 10px 10px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 0.4em;
+        }
+        .scrollmenu {
+            display: flex;
+            background-color: #efefef;
+            overflow: auto;
+            white-space: nowrap;
+        }
+        .attrezzi{
+            background: url(img/attrezzi.png) no-repeat center center;
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            display: flex;
+            align-items: flex-end;
+            margin: 50px 0;
+        }
+        .fascia-bianca{
+            background-color: white;
+            width: 100%;
+            height: 50px;
+            margin-bottom: 20px;
+        }
+        .fascia-bianca h3{
+            color: #FFD449;
+            font-size: 19px;
+            margin: 10px 10px;
+            
+        }
+        .concimi{
+            background: url(img/concimi.png) no-repeat center center;
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            display: flex;
+            align-items: flex-end;
+            margin: 50px 0;
+        }
+        .fascia-bianca-2{
+            background-color: white;
+            width: 100%;
+            height: 50px;
+            margin-bottom: 20px;
+        }
+        .fascia-bianca-2 h3{
+            color: #FFD449;
+            font-size: 19px;
+            margin: 10px 10px;
+            
+        }
+        .newsletter{
+            background-color: black;
+            color: white;
+            height: 200px;
+        }
+        .newsletter h3{
+            padding: 10px;
+            font-size: 19px;
+        }
+        .newsletter span{
+            padding: 10px;
+        }
+        .newsletter a{
+            display: flex;
+            font-weight: 500;
+            text-decoration: none;
+            color: #FFD449;
+            align-items: center;
+            padding: 10px;
+        }
+        .info{
+            background-color: #FFD449;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 10px 10px;
+            gap: 10px;
+        }
+        .info a{
+            color: black;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+        .info img{
+            width: 20px;
+        }
+        .info button{
+            background-color: white;
+            padding: 10px 10px;
+        }
+        .box-notizie{
+            margin: 50px 20px;
+        }
+        .box-notizie a{
+            text-decoration: none;
+            color: #FFD449;
+        }
+        footer{
+            padding: 10px 20px 20px;
+        }
+        footer span{
+            display: flex;
+        }
+        footer .social{
+            display: flex;
+            margin: 10px 0;
+            gap: 20px;
+            font-size: 20px;
+        }
+        .colonna{
+            margin: 20px 0;
+        }
+        
+        /* viewport desktop */
+        @media (min-width:768px){
+            header, .main-yellow, .main-mission, .container-info, .grid-notizie, footer{
+                display: grid;
+            }
+            header{
+                grid-template-columns: auto auto;
+                align-items: center;
+            }
+            nav li{
+                display: inline;
+            }
+            .main-yellow{
+                grid-template-columns: 1fr 1fr;
+            }
+            .main-mission{
+                grid-template-columns: 1fr 1fr;
+            }
+            .img-mission{
+                display: flex;
+                gap: 10px;
+                width: 200px;
+            }
+            .container-info{
+                grid-template-columns: 1fr 1fr;
+            }
+            .att-conc{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                margin: 50px 0;
+            }
+            .grid-notizie{
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            footer{
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
