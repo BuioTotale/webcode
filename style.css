@@ -37,6 +37,11 @@
             font-weight: 500;
             color: black;
         }
+        nav a:hover{
+            background-color: #fff;
+            border-radius: 0.4em;
+            padding: 5px 5px;
+        }
         #banner{
             width: 100%;
             height: 500px;
@@ -72,6 +77,11 @@
             text-transform: uppercase;
             padding: 10px;
             border-radius: 5px;
+            margin: 20px 0;
+        }
+        .btn-corsi:hover{
+            background-color: transparent;
+            border: 1px solid #fff;
         }
         .main-btn{
             display: flex;
@@ -89,6 +99,10 @@
             text-decoration: none;
             color: #FFD449;
             margin: 10px;
+        }
+        .main-btn a:hover{
+            letter-spacing: 5px;
+            transition: all 1s ease;
         }
         .mission{
             display: flex;
@@ -132,6 +146,10 @@
             background-color: white;
             border-radius: 0.4em;
         }
+        .card-prodotto button:hover{
+            background-color: transparent;
+            border: 1px solid #fff;
+        }
         .scrollmenu {
             display: flex;
             background-color: #efefef;
@@ -147,6 +165,7 @@
             align-items: flex-end;
             margin: 50px 0;
         }
+
         .fascia-bianca{
             background-color: white;
             width: 100%;
@@ -200,6 +219,10 @@
             align-items: center;
             padding: 10px;
         }
+        .newsletter a:hover{
+            letter-spacing: 5px;
+            transition: all 1s ease;
+        }
         .info{
             background-color: #FFD449;
             height: 200px;
@@ -220,6 +243,10 @@
         .info button{
             background-color: white;
             padding: 10px 10px;
+        }
+        .info button:hover{
+            background-color: transparent;
+            border: 1px solid #fff;
         }
         .box-notizie{
             margin: 50px 20px;
